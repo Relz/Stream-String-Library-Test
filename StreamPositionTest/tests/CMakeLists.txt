@@ -16,5 +16,4 @@ SET(SOURCE_FILES
 ADD_EXECUTABLE(StreamPositionTest ${SOURCE_FILES})
 
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/StreamStringLibrary)
-TARGET_LINK_LIBRARIES(StreamPositionTest gtest gtest_main)
-TARGET_LINK_LIBRARIES(StreamPositionTest StreamPosition)
+TARGET_LINK_LIBRARIES(StreamPositionTest gtest gtest_main StreamStringLibrary)

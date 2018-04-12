@@ -6,5 +6,4 @@ SET(SOURCE_FILES
 ADD_EXECUTABLE(StreamStringTest ${SOURCE_FILES})
 
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/StreamStringLibrary)
-TARGET_LINK_LIBRARIES(StreamStringTest gtest gtest_main)
-TARGET_LINK_LIBRARIES(StreamStringTest StreamStringLibrary)
+TARGET_LINK_LIBRARIES(StreamStringTest gtest gtest_main StreamStringLibrary)
